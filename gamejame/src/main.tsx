@@ -12,7 +12,11 @@ const root = document.getElementById('root')!
 const BASE = import.meta.env.BASE_URL
 function rebaseAssets<T>(node: T): T {
   if (typeof node === 'string')
-    return (/^(?:atlases|sounds|assets)\//.test(node) ? BASE + node : node) as unknown as T
+    // match both 'atlases/x.png' and '/atlases/x.png' (editor exports keep the leading slash),
+    // strip any leading slash, then prepend OUR base → '/<repo>/atlases/x.png'.
+    return (/^\/?(?:atlases|sounds|assets)\//.test(node)
+      ? BASE + node.replace(/^\//, '')
+      : node) as unknown as T
   if (Array.isArray(node)) return node.map((v) => rebaseAssets(v)) as unknown as T
   if (node && typeof node === 'object') {
     const out: Record<string, unknown> = {}
