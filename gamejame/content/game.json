@@ -1,0 +1,2763 @@
+{
+  "start": "pokoj-realita",
+  "referenceHeight": 1080,
+  "transition": {
+    "color": "#000000",
+    "minMs": 600
+  },
+  "initialFlags": {
+    "intro": true
+  },
+  "scenes": {
+    "pokoj-realita": {
+      "id": "pokoj-realita",
+      "name": "Dětský pokoj (realita)",
+      "width": 1920,
+      "layers": [
+        {
+          "kind": "animated",
+          "band": "mid",
+          "src": "/atlases/vnucka-wake.png",
+          "frameWidth": 92,
+          "frameHeight": 92,
+          "columns": 8,
+          "frames": 9,
+          "fps": 6,
+          "loop": true,
+          "xFrac": 0.4998034164859002,
+          "yFrac": 0.5430151843817788,
+          "fit": "none",
+          "scale": 3,
+          "when": {
+            "kind": "flag",
+            "flag": "asleep",
+            "value": false
+          }
+        },
+        {
+          "kind": "animated",
+          "band": "mid",
+          "src": "/atlases/vnucka-sleep.png",
+          "frameWidth": 92,
+          "frameHeight": 92,
+          "columns": 5,
+          "frames": 5,
+          "fps": 6,
+          "loop": true,
+          "xFrac": 0.4924823752711497,
+          "yFrac": 0.5468112798264642,
+          "fit": "none",
+          "scale": 3,
+          "when": {
+            "kind": "flag",
+            "flag": "asleep",
+            "value": true
+          }
+        },
+        {
+          "kind": "animated",
+          "band": "mid",
+          "src": "/atlases/babicka-chair.png",
+          "frameWidth": 92,
+          "frameHeight": 92,
+          "columns": 2,
+          "frames": 2,
+          "fps": 6,
+          "loop": true,
+          "xFrac": 0.7047478308026031,
+          "yFrac": 0.5781995661605206,
+          "fit": "none",
+          "scale": 3
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/9a775e0fbfa13632.webp",
+          "fit": "cover"
+        }
+      ],
+      "walkable": [
+        0.05,
+        0.78,
+        0.95,
+        0.78,
+        0.95,
+        0.96,
+        0.05,
+        0.96
+      ],
+      "holes": [],
+      "interactables": [],
+      "npcs": [],
+      "onEnter": [
+        {
+          "kind": "startSequence",
+          "sequence": "intro"
+        }
+      ],
+      "depth": {
+        "yNearFrac": 0.96,
+        "yFarFrac": 0.78,
+        "scaleNear": 3.5,
+        "scaleFar": 2.5
+      },
+      "spawn": {
+        "xFrac": 0.5,
+        "yFrac": 0.9
+      },
+      "lights": [
+        {
+          "id": "light",
+          "x": 0.602,
+          "y": 0.499,
+          "radius": 0.3,
+          "color": "#f6d19b",
+          "intensity": 0.55,
+          "flicker": 0.25
+        }
+      ]
+    },
+    "pokoj-spirit": {
+      "id": "pokoj-spirit",
+      "name": "Dětský pokoj (duchovní svět)",
+      "width": 1920,
+      "layers": [
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/9a775e0fbfa13632.webp",
+          "fit": "cover",
+          "name": "Background"
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/7a1c5f24cd1a7c8e.webp",
+          "fit": "none",
+          "scale": 0.32,
+          "anchorYFrac": 0.85,
+          "xFrac": 0.6268980477223427,
+          "yFrac": 0.5824295010845987,
+          "name": "Album",
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-fotoalbum"
+            }
+          }
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/0d31e182c17e8614.webp",
+          "fit": "none",
+          "xFrac": 0.3148386659436009,
+          "yFrac": 0.5379609544468545,
+          "name": "Photo",
+          "scale": 0.33,
+          "when": {
+            "kind": "all",
+            "of": [
+              {
+                "kind": "flag",
+                "flag": "album-shown",
+                "value": true
+              },
+              {
+                "kind": "flag",
+                "flag": "picked:p-fotka-matky",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/d6cf5e9749e9f8ce.webp",
+          "fit": "none",
+          "name": "Toy",
+          "xFrac": 0.7388489696312365,
+          "yFrac": 0.8101952277657266,
+          "scale": 0.36,
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-hracka"
+            }
+          }
+        }
+      ],
+      "walkable": [
+        0.325,
+        0.806,
+        0.334,
+        0.873,
+        0.128,
+        0.966,
+        0.106,
+        0.98,
+        0.964,
+        0.986,
+        0.951,
+        0.817,
+        0.782,
+        0.782,
+        0.696,
+        0.833,
+        0.619,
+        0.779,
+        0.54,
+        0.726
+      ],
+      "holes": [],
+      "interactables": [
+        {
+          "kind": "pickable",
+          "id": "p-fotoalbum",
+          "item": "fotoalbum",
+          "hitArea": [
+            0.619,
+            0.559,
+            0.599,
+            0.582,
+            0.637,
+            0.602,
+            0.657,
+            0.573
+          ],
+          "examine": "Kde se tady vzalo tohle album?",
+          "approachAt": {
+            "xFrac": 0.582,
+            "yFrac": 0.755
+          }
+        },
+        {
+          "kind": "pickable",
+          "id": "p-klic",
+          "item": "klic",
+          "hitArea": [
+            0.14,
+            0.775,
+            0.143,
+            0.893,
+            0.229,
+            0.885,
+            0.304,
+            0.829,
+            0.293,
+            0.739,
+            0.21,
+            0.734
+          ],
+          "examine": "A hele, klíč, od čeho asi tak je?"
+        },
+        {
+          "kind": "pickable",
+          "id": "p-hracka",
+          "item": "hracka",
+          "hitArea": [
+            0.7,
+            0.817,
+            0.749,
+            0.862,
+            0.78,
+            0.809,
+            0.734,
+            0.775
+          ],
+          "examine": "To je ale stará panenka!"
+        },
+        {
+          "kind": "pickable",
+          "id": "p-fotka-matky",
+          "item": "fotka-matky",
+          "hitArea": [
+            0.288,
+            0.504,
+            0.29,
+            0.578,
+            0.343,
+            0.577,
+            0.343,
+            0.498
+          ],
+          "examine": "Tahle fotka maminky tu nebyla.",
+          "when": {
+            "kind": "flag",
+            "flag": "album-shown"
+          }
+        },
+        {
+          "kind": "interact",
+          "id": "i-suplik-locked",
+          "hitArea": [
+            0.584,
+            0.593,
+            0.587,
+            0.631,
+            0.642,
+            0.633,
+            0.641,
+            0.6
+          ],
+          "examine": "Hm, zamčený.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "klic",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "klic"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "drawer-open",
+                  "value": true
+                },
+                {
+                  "kind": "giveItem",
+                  "item": "obrazek"
+                },
+                {
+                  "kind": "say",
+                  "text": "A hele, to je ale hezký obrázek."
+                }
+              ]
+            }
+          ],
+          "when": {
+            "kind": "flag",
+            "flag": "drawer-open",
+            "value": false
+          }
+        }
+      ],
+      "npcs": [
+        {
+          "npc": "babicka-old",
+          "spawn": {
+            "xFrac": 0.825,
+            "yFrac": 0.824
+          }
+        }
+      ],
+      "depth": {
+        "yNearFrac": 0.96,
+        "yFarFrac": 0.78,
+        "scaleNear": 3.5,
+        "scaleFar": 2.5
+      },
+      "spawn": {
+        "xFrac": 0.5,
+        "yFrac": 0.9
+      },
+      "spawnPoints": [
+        {
+          "at": {
+            "xFrac": 0.5,
+            "yFrac": 0.72
+          },
+          "target": "player",
+          "on": "start"
+        }
+      ],
+      "characterScale": 1.55,
+      "lights": [
+        {
+          "id": "light",
+          "x": 0.603,
+          "y": 0.499,
+          "radius": 0.3,
+          "color": "#ffd9a0",
+          "intensity": 0.75,
+          "flicker": 0.25
+        }
+      ]
+    },
+    "obyvak": {
+      "id": "obyvak",
+      "name": "Obývák",
+      "width": 2592,
+      "layers": [
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/90751079ba291a39.webp",
+          "fit": "cover",
+          "name": "Background"
+        },
+        {
+          "kind": "image",
+          "band": "foreground",
+          "src": "assets/baked/img/b99b28e25cd422fc.webp",
+          "fit": "none",
+          "xFrac": 0.12397660818713443,
+          "yFrac": 0.8501754385964914,
+          "scale": 0.55,
+          "name": "Foreground"
+        },
+        {
+          "kind": "image",
+          "band": "mid",
+          "src": "assets/baked/img/6f999aab08296f93.webp",
+          "fit": "none",
+          "anchorYFrac": 0.8,
+          "scale": 0.57,
+          "xFrac": 0.395906432748538,
+          "yFrac": 0.8073684210526317,
+          "name": "Desk"
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/354f396ff3bae022.webp",
+          "fit": "none",
+          "name": "Darek",
+          "xFrac": 0.061695906432748485,
+          "yFrac": 0.3884210526315789,
+          "scale": 0.14,
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-darek"
+            }
+          }
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/77e2a4d4e90b7a6f.webp",
+          "fit": "none",
+          "name": "Lekarska zprava",
+          "scale": 0.43,
+          "xFrac": 0.4795321637426901,
+          "yFrac": 0.6291228070175439,
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-lekarska-zprava"
+            }
+          }
+        },
+        {
+          "kind": "image",
+          "band": "mid",
+          "src": "assets/baked/img/36d625c4049aa453.webp",
+          "fit": "none",
+          "name": "Parte",
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-parte"
+            }
+          },
+          "xFrac": 0.43947368421052635,
+          "yFrac": 0.7414035087719301,
+          "anchorYFrac": 0.85,
+          "scale": 0.31
+        },
+        {
+          "kind": "image",
+          "band": "mid",
+          "src": "assets/baked/img/64d03269650591fa.webp",
+          "fit": "none",
+          "name": "vhs",
+          "anchorYFrac": 0.85,
+          "xFrac": 0.33011695906432753,
+          "yFrac": 0.7659649122807018,
+          "scale": 0.47,
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-kazeta"
+            }
+          }
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/88f21ac5efe7ec0d.webp",
+          "fit": "none",
+          "name": "leky",
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-leky"
+            }
+          },
+          "scale": 0.86,
+          "xFrac": 0.8163742690058479,
+          "yFrac": 0.29789473684210527
+        },
+        {
+          "kind": "image",
+          "band": "background",
+          "src": "assets/baked/img/b4e451ae56641460.webp",
+          "fit": "none",
+          "name": "kapesnik",
+          "when": {
+            "kind": "not",
+            "of": {
+              "kind": "flag",
+              "flag": "picked:p-kapesnik"
+            }
+          },
+          "scale": 0.71,
+          "xFrac": 0.6049707602339182,
+          "yFrac": 0.8333333333333331
+        }
+      ],
+      "walkable": [
+        0.095,
+        0.708,
+        0.271,
+        0.701,
+        0.272,
+        0.781,
+        0.504,
+        0.772,
+        0.566,
+        0.82,
+        0.651,
+        0.772,
+        0.687,
+        0.764,
+        0.681,
+        0.646,
+        0.724,
+        0.635,
+        0.741,
+        0.666,
+        0.863,
+        0.65,
+        0.986,
+        0.751,
+        0.992,
+        0.987,
+        0.016,
+        0.981,
+        0.022,
+        0.805
+      ],
+      "holes": [
+        [
+          0.26,
+          0.792,
+          0.26,
+          0.941,
+          0.513,
+          0.932,
+          0.512,
+          0.798
+        ]
+      ],
+      "interactables": [
+        {
+          "kind": "pickable",
+          "id": "p-kapesnik",
+          "item": "kapesnik",
+          "hitArea": [
+            0.588,
+            0.81,
+            0.588,
+            0.872,
+            0.627,
+            0.869,
+            0.623,
+            0.807
+          ],
+          "examine": "Kapesník. A je na něm krev! Babi? Babi, stalo se ti něco?"
+        },
+        {
+          "kind": "pickable",
+          "id": "p-lekarska-zprava",
+          "item": "lekarska-zprava",
+          "hitArea": [
+            0.458,
+            0.605,
+            0.458,
+            0.65,
+            0.505,
+            0.649,
+            0.506,
+            0.607
+          ],
+          "examine": "Papír od doktora, ale nerozumím, co se tam píše."
+        },
+        {
+          "kind": "pickable",
+          "id": "p-parte",
+          "item": "parte",
+          "hitArea": [
+            0.42,
+            0.719,
+            0.42,
+            0.774,
+            0.458,
+            0.775,
+            0.461,
+            0.716
+          ],
+          "examine": "Na tomhle papíru je jméno mojí prababičky."
+        },
+        {
+          "kind": "pickable",
+          "id": "p-kazeta",
+          "item": "kazeta",
+          "hitArea": [
+            0.298,
+            0.741,
+            0.298,
+            0.806,
+            0.36,
+            0.796,
+            0.36,
+            0.726
+          ],
+          "examine": "Stará kazeta? Co je na ní asi za film?",
+          "approachAt": {
+            "xFrac": 0.327,
+            "yFrac": 0.907
+          }
+        },
+        {
+          "kind": "pickable",
+          "id": "p-leky",
+          "item": "leky",
+          "hitArea": [
+            0.805,
+            0.268,
+            0.805,
+            0.327,
+            0.835,
+            0.326,
+            0.834,
+            0.27
+          ],
+          "examine": "Tolik léků? Snad se babička nebude zlobit, když na ně sáhnu."
+        },
+        {
+          "kind": "pickable",
+          "id": "p-darek",
+          "item": "darek",
+          "hitArea": [
+            0.046,
+            0.362,
+            0.044,
+            0.428,
+            0.078,
+            0.428,
+            0.078,
+            0.36
+          ],
+          "examine": "Starý dárek. Od koho asi je?"
+        },
+        {
+          "kind": "interact",
+          "id": "i-zvuky",
+          "hitArea": [
+            0.153,
+            0.224,
+            0.156,
+            0.704,
+            0.281,
+            0.704,
+            0.286,
+            0.224
+          ],
+          "examine": "Tam někdo pláče?",
+          "effects": [
+            {
+              "kind": "startDialog",
+              "dialog": "zvuky"
+            }
+          ]
+        }
+      ],
+      "npcs": [
+        {
+          "npc": "babicka-sad",
+          "spawn": {
+            "xFrac": 0.373,
+            "yFrac": 0.66
+          }
+        }
+      ],
+      "depth": {
+        "yNearFrac": 0.96,
+        "yFarFrac": 0.78,
+        "scaleNear": 3.5,
+        "scaleFar": 2.5,
+        "stops": [
+          {
+            "yFrac": 0.78,
+            "scale": 2
+          },
+          {
+            "yFrac": 0.96,
+            "scale": 3.5
+          }
+        ]
+      },
+      "spawn": {
+        "xFrac": 0.5,
+        "yFrac": 0.9
+      },
+      "characterScale": 1.65,
+      "spawnPoints": [
+        {
+          "at": {
+            "xFrac": 0.702,
+            "yFrac": 0.652
+          },
+          "target": "player",
+          "from": "pokoj-spirit"
+        }
+      ],
+      "lights": [
+        {
+          "id": "light",
+          "x": 0.576,
+          "y": 0.386,
+          "radius": 0.3,
+          "color": "#ffb100",
+          "intensity": 0.45,
+          "flicker": 0.3
+        },
+        {
+          "id": "light-2",
+          "x": 0.212,
+          "y": 0.771,
+          "radius": 0.24,
+          "color": "#00fd6f",
+          "intensity": 0.5,
+          "flicker": 0.2
+        }
+      ]
+    },
+    "hrbitov": {
+      "id": "hrbitov",
+      "name": "Hřbitov",
+      "width": 1920,
+      "layers": [],
+      "walkable": [
+        0.05,
+        0.78,
+        0.95,
+        0.78,
+        0.95,
+        0.96,
+        0.05,
+        0.96
+      ],
+      "holes": [],
+      "interactables": [
+        {
+          "kind": "interact",
+          "id": "i-hrob",
+          "hitArea": [
+            0.45,
+            0.36,
+            0.55,
+            0.36,
+            0.55,
+            0.54,
+            0.45,
+            0.54
+          ],
+          "examine": "To je hrob mojí prababičky.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "parte",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "parte"
+                },
+                {
+                  "kind": "giveItem",
+                  "item": "vzpominka-prababicka"
+                }
+              ]
+            },
+            {
+              "item": "smireni",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "smireni"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "smireno",
+                  "value": true
+                },
+                {
+                  "kind": "startSequence",
+                  "sequence": "finale-hrbitov"
+                }
+              ]
+            }
+          ],
+          "approachAt": {
+            "xFrac": 0.5,
+            "yFrac": 0.82
+          }
+        },
+        {
+          "kind": "interact",
+          "id": "i-tmave-papiry",
+          "hitArea": [
+            0.13,
+            0.63,
+            0.22999999999999998,
+            0.63,
+            0.22999999999999998,
+            0.8099999999999999,
+            0.13,
+            0.8099999999999999
+          ],
+          "examine": "Co to je? Nevidím na to.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "zapalena-svicka",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "zapalena-svicka"
+                },
+                {
+                  "kind": "giveItem",
+                  "item": "nesouhlas"
+                },
+                {
+                  "kind": "say",
+                  "text": "Už na to vidím."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "pickable",
+          "id": "p-svicka",
+          "item": "svicka",
+          "hitArea": [
+            0.06999999999999999,
+            0.55,
+            0.16999999999999998,
+            0.55,
+            0.16999999999999998,
+            0.73,
+            0.06999999999999999,
+            0.73
+          ],
+          "examine": "A hele, svíčka."
+        },
+        {
+          "kind": "pickable",
+          "id": "p-zapalovac",
+          "item": "zapalovac",
+          "hitArea": [
+            0.83,
+            0.55,
+            0.93,
+            0.55,
+            0.93,
+            0.73,
+            0.83,
+            0.73
+          ],
+          "examine": "Zapalovač. S tím bych si neměla hrát. Co když jen zkusím, jestli funguje?"
+        },
+        {
+          "kind": "pickable",
+          "id": "p-ultrazvuk",
+          "item": "ultrazvuk",
+          "hitArea": [
+            0.25,
+            0.51,
+            0.35,
+            0.51,
+            0.35,
+            0.69,
+            0.25,
+            0.69
+          ],
+          "examine": "To je moje fotka v maminčině bříšku."
+        },
+        {
+          "kind": "pickable",
+          "id": "p-lahev-leky",
+          "item": "lahev-leky",
+          "hitArea": [
+            0.6699999999999999,
+            0.63,
+            0.77,
+            0.63,
+            0.77,
+            0.8099999999999999,
+            0.6699999999999999,
+            0.8099999999999999
+          ],
+          "examine": "Láhev a prášky."
+        },
+        {
+          "kind": "pickable",
+          "id": "p-papir-1",
+          "item": "kus-papiru-1",
+          "hitArea": [
+            0.05,
+            0.61,
+            0.15000000000000002,
+            0.61,
+            0.15000000000000002,
+            0.7899999999999999,
+            0.05,
+            0.7899999999999999
+          ],
+          "examine": "Kus papíru. Najdu ještě jiný?"
+        },
+        {
+          "kind": "pickable",
+          "id": "p-papir-2",
+          "item": "kus-papiru-2",
+          "hitArea": [
+            0.33,
+            0.65,
+            0.43,
+            0.65,
+            0.43,
+            0.83,
+            0.33,
+            0.83
+          ],
+          "examine": "Kus papíru. Najdu ještě jiný?"
+        },
+        {
+          "kind": "pickable",
+          "id": "p-papir-3",
+          "item": "kus-papiru-3",
+          "hitArea": [
+            0.57,
+            0.65,
+            0.67,
+            0.65,
+            0.67,
+            0.83,
+            0.57,
+            0.83
+          ],
+          "examine": "Kus papíru. Najdu ještě jiný?"
+        },
+        {
+          "kind": "pickable",
+          "id": "p-papir-4",
+          "item": "kus-papiru-4",
+          "hitArea": [
+            0.85,
+            0.61,
+            0.9500000000000001,
+            0.61,
+            0.9500000000000001,
+            0.7899999999999999,
+            0.85,
+            0.7899999999999999
+          ],
+          "examine": "Kus papíru. Najdu ještě jiný?"
+        },
+        {
+          "kind": "interact",
+          "id": "denik-0",
+          "hitArea": [
+            0.45,
+            0.53,
+            0.55,
+            0.53,
+            0.55,
+            0.71,
+            0.45,
+            0.71
+          ],
+          "examine": "Co je tohle za knížku? Vypadá jako deníček, ale nejde otevřít.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "vzpominka-maminka",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "vzpominka-maminka"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "denik1",
+                  "value": true
+                }
+              ]
+            }
+          ],
+          "when": {
+            "kind": "flag",
+            "flag": "denik1",
+            "value": false
+          }
+        },
+        {
+          "kind": "interact",
+          "id": "denik-1",
+          "hitArea": [
+            0.45,
+            0.53,
+            0.55,
+            0.53,
+            0.55,
+            0.71,
+            0.45,
+            0.71
+          ],
+          "examine": "Dneska jsem ve škole dostala vysvědčení. Měla jsem pár špatných známek, ale maminka se na mě vůbec nezlobila a řekla, že jsem její šikulka.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "vzpominka-prababicka",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "vzpominka-prababicka"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "denik2",
+                  "value": true
+                }
+              ]
+            }
+          ],
+          "when": {
+            "kind": "all",
+            "of": [
+              {
+                "kind": "flag",
+                "flag": "denik1",
+                "value": true
+              },
+              {
+                "kind": "flag",
+                "flag": "denik2",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "kind": "interact",
+          "id": "denik-2",
+          "hitArea": [
+            0.45,
+            0.53,
+            0.55,
+            0.53,
+            0.55,
+            0.71,
+            0.45,
+            0.71
+          ],
+          "examine": "Babička je prostě nejvíc nejlepší. Můžu jí říct všechno a moc se o mě stará. Miluju jí!",
+          "effects": [],
+          "uses": [
+            {
+              "item": "vzpominka-dobre-casy",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "vzpominka-dobre-casy"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "denik3",
+                  "value": true
+                }
+              ]
+            }
+          ],
+          "when": {
+            "kind": "all",
+            "of": [
+              {
+                "kind": "flag",
+                "flag": "denik2",
+                "value": true
+              },
+              {
+                "kind": "flag",
+                "flag": "denik3",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "kind": "interact",
+          "id": "denik-3",
+          "hitArea": [
+            0.45,
+            0.53,
+            0.55,
+            0.53,
+            0.55,
+            0.71,
+            0.45,
+            0.71
+          ],
+          "examine": "Byli jsme s maminkou a tátou na výletě, bylo to super! Táta se vztekal kvůli autu a my se mu s maminkou smály.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "vzpominka-hrozne-casy",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "vzpominka-hrozne-casy"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "denik4",
+                  "value": true
+                }
+              ]
+            }
+          ],
+          "when": {
+            "kind": "all",
+            "of": [
+              {
+                "kind": "flag",
+                "flag": "denik3",
+                "value": true
+              },
+              {
+                "kind": "flag",
+                "flag": "denik4",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "kind": "interact",
+          "id": "denik-4",
+          "hitArea": [
+            0.45,
+            0.53,
+            0.55,
+            0.53,
+            0.55,
+            0.71,
+            0.45,
+            0.71
+          ],
+          "examine": "Táta se chová zvláštně. Křičel na maminku, křičel na mě. Bojím se. Maminka plakala. Babička by věděla, co dělat, ale už tu není. Maminka se také bojí, jsem sama.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "vzpominka-tehotenstvi",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "vzpominka-tehotenstvi"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "denik5",
+                  "value": true
+                }
+              ]
+            }
+          ],
+          "when": {
+            "kind": "all",
+            "of": [
+              {
+                "kind": "flag",
+                "flag": "denik4",
+                "value": true
+              },
+              {
+                "kind": "flag",
+                "flag": "denik5",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "kind": "interact",
+          "id": "denik-5",
+          "hitArea": [
+            0.45,
+            0.53,
+            0.55,
+            0.53,
+            0.55,
+            0.71,
+            0.45,
+            0.71
+          ],
+          "examine": "To dítě je jeho. Nenávidím ho. Nenávidím ji. Prý je to poslední, co po něm zbylo. I když je pryč, pořád je se mnou. Ať všechno po něm zmizí, ale ona mi to nedovolí. Pořád ho miluje. Nenávidím je všechny.",
+          "effects": [],
+          "uses": [
+            {
+              "item": "vzpominka-sebevrazda",
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "vzpominka-sebevrazda"
+                },
+                {
+                  "kind": "setFlag",
+                  "flag": "denik6",
+                  "value": true
+                }
+              ]
+            }
+          ],
+          "when": {
+            "kind": "all",
+            "of": [
+              {
+                "kind": "flag",
+                "flag": "denik5",
+                "value": true
+              },
+              {
+                "kind": "flag",
+                "flag": "denik6",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "kind": "pickable",
+          "id": "denik-complete",
+          "item": "kompletni-denik",
+          "hitArea": [
+            0.45,
+            0.53,
+            0.55,
+            0.53,
+            0.55,
+            0.71,
+            0.45,
+            0.71
+          ],
+          "examine": "Už nemůžu. Je mi to jedno. Nesnáším je obě. Nemůžu si pomoci. Jestli ji chce, ať si ji nechá. Já končím. Zradili mě, zklamali. On mě zničil a ona je zbabělec.",
+          "when": {
+            "kind": "flag",
+            "flag": "denik6",
+            "value": true
+          }
+        },
+        {
+          "kind": "trigger",
+          "id": "z-denik-safe",
+          "hitArea": [
+            0.3,
+            0.72,
+            0.7,
+            0.72,
+            0.7,
+            0.96,
+            0.3,
+            0.96
+          ],
+          "by": "player",
+          "effects": [
+            {
+              "kind": "setFlag",
+              "flag": "reading",
+              "value": true
+            }
+          ],
+          "on": "enter",
+          "exitEffects": [
+            {
+              "kind": "setFlag",
+              "flag": "reading",
+              "value": false
+            }
+          ]
+        },
+        {
+          "kind": "trigger",
+          "id": "z-ukryt-1",
+          "hitArea": [
+            0.020000000000000004,
+            0.8,
+            0.14,
+            0.8,
+            0.14,
+            0.9199999999999999,
+            0.020000000000000004,
+            0.9199999999999999
+          ],
+          "by": "player",
+          "effects": [
+            {
+              "kind": "setFlag",
+              "flag": "hidden",
+              "value": true
+            }
+          ],
+          "on": "enter",
+          "exitEffects": [
+            {
+              "kind": "setFlag",
+              "flag": "hidden",
+              "value": false
+            }
+          ]
+        },
+        {
+          "kind": "trigger",
+          "id": "z-ukryt-2",
+          "hitArea": [
+            0.8600000000000001,
+            0.8,
+            0.98,
+            0.8,
+            0.98,
+            0.9199999999999999,
+            0.8600000000000001,
+            0.9199999999999999
+          ],
+          "by": "player",
+          "effects": [
+            {
+              "kind": "setFlag",
+              "flag": "hidden",
+              "value": true
+            }
+          ],
+          "on": "enter",
+          "exitEffects": [
+            {
+              "kind": "setFlag",
+              "flag": "hidden",
+              "value": false
+            }
+          ]
+        },
+        {
+          "kind": "trigger",
+          "id": "t-intro",
+          "hitArea": [
+            0.3,
+            0.85,
+            0.7,
+            0.85,
+            0.7,
+            0.9500000000000001,
+            0.3,
+            0.9500000000000001
+          ],
+          "by": "player",
+          "effects": [
+            {
+              "kind": "setFlag",
+              "flag": "hrbitov-seen",
+              "value": true
+            },
+            {
+              "kind": "startDialog",
+              "dialog": "hrbitov-intro"
+            }
+          ],
+          "once": true,
+          "when": {
+            "kind": "flag",
+            "flag": "hrbitov-seen",
+            "value": false
+          }
+        },
+        {
+          "kind": "exit",
+          "id": "x-kostel",
+          "to": "kostel",
+          "hitArea": [
+            0.45,
+            0.29000000000000004,
+            0.55,
+            0.29000000000000004,
+            0.55,
+            0.47,
+            0.45,
+            0.47
+          ],
+          "when": {
+            "kind": "flag",
+            "flag": "smireno",
+            "value": true
+          },
+          "examine": "Kostel. Vchod se otevřel.",
+          "approachAt": {
+            "xFrac": 0.5,
+            "yFrac": 0.82
+          }
+        }
+      ],
+      "npcs": [
+        {
+          "npc": "prisera",
+          "spawn": {
+            "xFrac": 0.5,
+            "yFrac": 0.85
+          },
+          "when": {
+            "kind": "flag",
+            "flag": "smireno",
+            "value": false
+          },
+          "path": {
+            "points": [
+              0.3,
+              0.82,
+              0.7,
+              0.82,
+              0.7,
+              0.92,
+              0.3,
+              0.92
+            ],
+            "mode": "loop"
+          }
+        },
+        {
+          "npc": "matka-hrbitov",
+          "spawn": {
+            "xFrac": 0.5,
+            "yFrac": 0.76
+          },
+          "when": {
+            "kind": "flag",
+            "flag": "smireno",
+            "value": true
+          }
+        }
+      ],
+      "depth": {
+        "yNearFrac": 0.96,
+        "yFarFrac": 0.78,
+        "scaleNear": 3.5,
+        "scaleFar": 2.5
+      },
+      "spawn": {
+        "xFrac": 0.5,
+        "yFrac": 0.9
+      }
+    },
+    "kostel": {
+      "id": "kostel",
+      "name": "Kostel",
+      "width": 1920,
+      "layers": [],
+      "walkable": [
+        0.05,
+        0.78,
+        0.95,
+        0.78,
+        0.95,
+        0.96,
+        0.05,
+        0.96
+      ],
+      "holes": [],
+      "interactables": [],
+      "npcs": [
+        {
+          "npc": "babicka-kostel",
+          "spawn": {
+            "xFrac": 0.42,
+            "yFrac": 0.86
+          }
+        },
+        {
+          "npc": "matka-kostel",
+          "spawn": {
+            "xFrac": 0.58,
+            "yFrac": 0.86
+          }
+        }
+      ],
+      "onEnter": [
+        {
+          "kind": "startDialog",
+          "dialog": "finale"
+        }
+      ],
+      "depth": {
+        "yNearFrac": 0.96,
+        "yFarFrac": 0.78,
+        "scaleNear": 3.5,
+        "scaleFar": 2.5
+      },
+      "spawn": {
+        "xFrac": 0.5,
+        "yFrac": 0.9
+      }
+    }
+  },
+  "items": {
+    "klic": {
+      "id": "klic",
+      "name": "Klíč",
+      "examine": "Starý klíč. Od čeho asi je?"
+    },
+    "hracka": {
+      "id": "hracka",
+      "name": "Stará panenka",
+      "examine": "Panenka po mamince."
+    },
+    "obrazek": {
+      "id": "obrazek",
+      "name": "Obrázek",
+      "examine": "Obrázek, který namalovala maminka."
+    },
+    "fotka-matky": {
+      "id": "fotka-matky",
+      "name": "Fotka maminky",
+      "examine": "Fotka maminky, když byla šťastná."
+    },
+    "fotoalbum": {
+      "id": "fotoalbum",
+      "name": "Fotoalbum",
+      "examine": "Staré rodinné fotoalbum."
+    },
+    "mem-mom-tmp": {
+      "id": "mem-mom-tmp",
+      "name": "Maminčiny věci",
+      "examine": "Panenka a obrázek pohromadě."
+    },
+    "vzpominka-maminka": {
+      "id": "vzpominka-maminka",
+      "name": "Vzpomínky na maminku",
+      "examine": "Vzpomínky na maminku."
+    },
+    "kapesnik": {
+      "id": "kapesnik",
+      "name": "Zakrvácený kapesník",
+      "examine": "Kapesník. A je na něm krev."
+    },
+    "kapesnik-babicky": {
+      "id": "kapesnik-babicky",
+      "name": "Babiččin zakrvácený kapesník",
+      "examine": "Babiččin zakrvácený kapesník."
+    },
+    "lekarska-zprava": {
+      "id": "lekarska-zprava",
+      "name": "Lékařská zpráva",
+      "examine": "Papír od doktora."
+    },
+    "parte": {
+      "id": "parte",
+      "name": "Úmrtní oznámení",
+      "examine": "Úmrtní oznámení prababičky."
+    },
+    "kazeta": {
+      "id": "kazeta",
+      "name": "Stará kazeta",
+      "examine": "Stará kazeta s oblíbeným filmem."
+    },
+    "leky": {
+      "id": "leky",
+      "name": "Léky",
+      "examine": "Spousta dědových léků."
+    },
+    "darek": {
+      "id": "darek",
+      "name": "Starý dárek",
+      "examine": "Dárek z časů, kdy bylo ještě dobře."
+    },
+    "vzpominka-dobre-casy": {
+      "id": "vzpominka-dobre-casy",
+      "name": "Vzpomínky na dobré časy",
+      "examine": "Vzpomínky na dobré časy."
+    },
+    "vzpominka-hrozne-casy": {
+      "id": "vzpominka-hrozne-casy",
+      "name": "Vzpomínky na hrozné časy",
+      "examine": "Vzpomínky na hrozné časy."
+    },
+    "svicka": {
+      "id": "svicka",
+      "name": "Svíčka",
+      "examine": "Obyčejná svíčka."
+    },
+    "zapalovac": {
+      "id": "zapalovac",
+      "name": "Zapalovač",
+      "examine": "Starý zapalovač."
+    },
+    "zapalena-svicka": {
+      "id": "zapalena-svicka",
+      "name": "Zapálená svíčka",
+      "examine": "Hořící svíčka."
+    },
+    "nesouhlas": {
+      "id": "nesouhlas",
+      "name": "Nesouhlas s interrupcí",
+      "examine": "Nesouhlas s provedením interrupce u nezletilé."
+    },
+    "ultrazvuk": {
+      "id": "ultrazvuk",
+      "name": "Fotka z ultrazvuku",
+      "examine": "Fotka z ultrazvuku — zdravé dítě."
+    },
+    "vzpominka-tehotenstvi": {
+      "id": "vzpominka-tehotenstvi",
+      "name": "Vzpomínky na těhotenství",
+      "examine": "Vzpomínky na těhotenství."
+    },
+    "kus-papiru-1": {
+      "id": "kus-papiru-1",
+      "name": "Kus fotky (1/4)",
+      "examine": "Utržený kus fotky."
+    },
+    "kus-papiru-2": {
+      "id": "kus-papiru-2",
+      "name": "Kus fotky (2/4)",
+      "examine": "Utržený kus fotky."
+    },
+    "kus-papiru-3": {
+      "id": "kus-papiru-3",
+      "name": "Kus fotky (3/4)",
+      "examine": "Utržený kus fotky."
+    },
+    "kus-papiru-4": {
+      "id": "kus-papiru-4",
+      "name": "Kus fotky (4/4)",
+      "examine": "Utržený kus fotky."
+    },
+    "fotka-tmp1": {
+      "id": "fotka-tmp1",
+      "name": "Slepená fotka (2 kusy)",
+      "examine": "Dva slepené kusy fotky."
+    },
+    "fotka-tmp2": {
+      "id": "fotka-tmp2",
+      "name": "Slepená fotka (3 kusy)",
+      "examine": "Tři slepené kusy fotky."
+    },
+    "fotka-babicky": {
+      "id": "fotka-babicky",
+      "name": "Fotka mladší babičky",
+      "examine": "Složená fotka mladší babičky."
+    },
+    "lahev-leky": {
+      "id": "lahev-leky",
+      "name": "Láhev a prášky",
+      "examine": "Prázdná láhev a prášky."
+    },
+    "vzpominka-sebevrazda": {
+      "id": "vzpominka-sebevrazda",
+      "name": "Vzpomínky na sebevraždu",
+      "examine": "Vzpomínky na sebevraždu."
+    },
+    "vzpominka-prababicka": {
+      "id": "vzpominka-prababicka",
+      "name": "Vzpomínky na prababičku",
+      "examine": "Vzpomínky na prababičku."
+    },
+    "kompletni-denik": {
+      "id": "kompletni-denik",
+      "name": "Kompletní deník",
+      "examine": "Maminčin deník, celý."
+    },
+    "smireni": {
+      "id": "smireni",
+      "name": "Smíření",
+      "examine": "Smíření."
+    }
+  },
+  "recipes": [
+    {
+      "a": "hracka",
+      "b": "obrazek",
+      "output": "mem-mom-tmp"
+    },
+    {
+      "a": "mem-mom-tmp",
+      "b": "fotka-matky",
+      "output": "vzpominka-maminka"
+    },
+    {
+      "a": "leky",
+      "b": "lekarska-zprava",
+      "output": "vzpominka-hrozne-casy"
+    },
+    {
+      "a": "darek",
+      "b": "kazeta",
+      "output": "vzpominka-dobre-casy"
+    },
+    {
+      "a": "svicka",
+      "b": "zapalovac",
+      "output": "zapalena-svicka"
+    },
+    {
+      "a": "ultrazvuk",
+      "b": "nesouhlas",
+      "output": "vzpominka-tehotenstvi"
+    },
+    {
+      "a": "kus-papiru-1",
+      "b": "kus-papiru-2",
+      "output": "fotka-tmp1"
+    },
+    {
+      "a": "fotka-tmp1",
+      "b": "kus-papiru-3",
+      "output": "fotka-tmp2"
+    },
+    {
+      "a": "fotka-tmp2",
+      "b": "kus-papiru-4",
+      "output": "fotka-babicky"
+    },
+    {
+      "a": "lahev-leky",
+      "b": "fotka-babicky",
+      "output": "vzpominka-sebevrazda"
+    },
+    {
+      "a": "kapesnik-babicky",
+      "b": "kompletni-denik",
+      "output": "smireni"
+    }
+  ],
+  "dialogs": {
+    "intro": {
+      "start": "s",
+      "nodes": {
+        "s": {
+          "speaker": "Babička",
+          "text": "Spinkej, jsem dnes velmi unavená a není mi dobře.",
+          "next": "q"
+        },
+        "q": {
+          "speaker": "Vnučka",
+          "text": "Jak ti není dobře, babičko?",
+          "next": "a"
+        },
+        "a": {
+          "speaker": "Babička",
+          "text": "Je mi slabo, to bude dobré, spinkej ať si můžu taky lehnout, jsem unavená."
+        }
+      }
+    },
+    "awaken": {
+      "start": "s",
+      "nodes": {
+        "s": {
+          "speaker": "Vnučka",
+          "text": "Co se stalo? Já spinkám? Babičko?",
+          "next": "a"
+        },
+        "a": {
+          "speaker": "Babička",
+          "text": "Dceruško…"
+        }
+      }
+    },
+    "babicka-spirit": {
+      "start": "s",
+      "nodes": {
+        "s": {
+          "speaker": "Babička",
+          "text": "Co potřebuješ?",
+          "branch": [
+            {
+              "when": {
+                "kind": "flag",
+                "flag": "album-shown",
+                "value": false
+              },
+              "to": "before"
+            }
+          ],
+          "choices": [
+            {
+              "text": "Našla jsem fotku maminky.",
+              "when": {
+                "kind": "hasItem",
+                "item": "fotka-matky"
+              },
+              "next": "foto"
+            },
+            {
+              "text": "Koukni, našla jsem nějaký klíč.",
+              "when": {
+                "kind": "hasItem",
+                "item": "klic"
+              },
+              "next": "klic"
+            },
+            {
+              "text": "Tuhle panenku jsem už někde viděla…",
+              "when": {
+                "kind": "hasItem",
+                "item": "hracka"
+              },
+              "next": "panenka"
+            },
+            {
+              "text": "Babi, čí je tenhle obrázek?",
+              "when": {
+                "kind": "hasItem",
+                "item": "obrazek"
+              },
+              "next": "obrazek"
+            },
+            {
+              "text": "Co se vlastně mamince stalo?",
+              "when": {
+                "kind": "hasItem",
+                "item": "vzpominka-maminka"
+              },
+              "effects": [
+                {
+                  "kind": "goTo",
+                  "scene": "obyvak"
+                }
+              ]
+            },
+            {
+              "text": "(už nic)"
+            }
+          ]
+        },
+        "before": {
+          "speaker": "Babička",
+          "text": "Spinkej, nechce se mi povídat.",
+          "choices": [
+            {
+              "text": "Našla jsem tohle album.",
+              "when": {
+                "kind": "hasItem",
+                "item": "fotoalbum"
+              },
+              "effects": [
+                {
+                  "kind": "setFlag",
+                  "flag": "album-shown",
+                  "value": true
+                }
+              ],
+              "next": "album"
+            }
+          ]
+        },
+        "album": {
+          "speaker": "Babička",
+          "text": "A hle, naše staré fotoalbum. Tolik vzpomínek, jak jsi byla malá, dokonce i fotky tvojí maminky, než chudák umřela. Dneska jsem na ni hodně myslela, i na dědu. Hodně jsme jí s dědou ublížili.",
+          "next": "album2"
+        },
+        "album2": {
+          "speaker": "Vnučka",
+          "text": "To jsi mi babi nikdy neříkala.",
+          "next": "album3"
+        },
+        "album3": {
+          "speaker": "Babička",
+          "text": "Teď už je všechno jinak."
+        },
+        "foto": {
+          "speaker": "Babička",
+          "text": "Tady byla šťastná, to je předtím, než moje maminka umřela."
+        },
+        "klic": {
+          "speaker": "Babička",
+          "text": "Tak s ním zkus něco odemknout."
+        },
+        "panenka": {
+          "speaker": "Babička",
+          "text": "No ne, kde se tu vzala? S tou si hrála tvoje maminka, když byla ještě malá."
+        },
+        "obrazek": {
+          "speaker": "Babička",
+          "text": "Ten malovala tvoje maminka, byla moc šikovná."
+        }
+      }
+    },
+    "babicka-obyvak": {
+      "start": "s",
+      "nodes": {
+        "s": {
+          "speaker": "Babička",
+          "text": "Ano, holčičko?",
+          "choices": [
+            {
+              "text": "Babi, čí to je krev?",
+              "when": {
+                "kind": "hasItem",
+                "item": "kapesnik"
+              },
+              "effects": [
+                {
+                  "kind": "takeItem",
+                  "item": "kapesnik"
+                },
+                {
+                  "kind": "giveItem",
+                  "item": "kapesnik-babicky"
+                }
+              ],
+              "next": "krev"
+            },
+            {
+              "text": "Babi, co se tam píše?",
+              "when": {
+                "kind": "hasItem",
+                "item": "lekarska-zprava"
+              },
+              "next": "zprava"
+            },
+            {
+              "text": "Babičko, nerozumím tomu, co se tady píše.",
+              "when": {
+                "kind": "hasItem",
+                "item": "parte"
+              },
+              "next": "parte"
+            },
+            {
+              "text": "Co to tady dělá tahle kazeta?",
+              "when": {
+                "kind": "hasItem",
+                "item": "kazeta"
+              },
+              "next": "kazeta"
+            },
+            {
+              "text": "Babi, proč je tady tolik léků?",
+              "when": {
+                "kind": "hasItem",
+                "item": "leky"
+              },
+              "next": "leky"
+            },
+            {
+              "text": "Babi, čí je tenhle dárek?",
+              "when": {
+                "kind": "hasItem",
+                "item": "darek"
+              },
+              "next": "darek"
+            },
+            {
+              "text": "Babi? Co se děje? Vypadáš tak smutně.",
+              "when": {
+                "kind": "all",
+                "of": [
+                  {
+                    "kind": "hasItem",
+                    "item": "vzpominka-dobre-casy"
+                  },
+                  {
+                    "kind": "hasItem",
+                    "item": "vzpominka-hrozne-casy"
+                  }
+                ]
+              },
+              "next": "odchod"
+            },
+            {
+              "text": "(už nic)"
+            }
+          ]
+        },
+        "krev": {
+          "speaker": "Babička",
+          "text": "To je moje krev. Tvůj děda býval někdy prudký… Ale dřív jsem se ho nemusela bát."
+        },
+        "zprava": {
+          "speaker": "Babička",
+          "text": "Že je děda moc nemocný a může se chovat zvláštně."
+        },
+        "parte": {
+          "speaker": "Babička",
+          "text": "Tam je napsáno, že moje maminka umřela. Tvoje maminka i já jsme z toho byly velmi smutné. Hlavně kvůli dědovi."
+        },
+        "kazeta": {
+          "speaker": "Babička",
+          "text": "Kde se tady vzala? To byl náš s dědou milovaný film. To jsme s dědou pouštěli pořád dokola… tehdy jsme ještě bývali šťastní."
+        },
+        "leky": {
+          "speaker": "Babička",
+          "text": "To jsou dědy léky, ale v téhle době, když se blížil konec, už příliš nepomáhaly."
+        },
+        "darek": {
+          "speaker": "Babička",
+          "text": "To mi dal děda, když ještě… Když nám bylo ještě dobře."
+        },
+        "odchod": {
+          "speaker": "Babička",
+          "text": "Moje dceruška. Dneska na ni moc myslím. Zklamala jsem ji. Mám pocit, že mě volá.",
+          "effects": [
+            {
+              "kind": "goTo",
+              "scene": "hrbitov"
+            }
+          ]
+        }
+      }
+    },
+    "zvuky": {
+      "start": "s",
+      "nodes": {
+        "s": {
+          "speaker": "Vnučka",
+          "text": "Co to je za zvuky? Tam někdo pláče?",
+          "next": "a"
+        },
+        "a": {
+          "speaker": "Babička",
+          "text": "Nechoď k těm dveřím, pojď sem ke mně."
+        }
+      }
+    },
+    "hrbitov-intro": {
+      "start": "s",
+      "nodes": {
+        "s": {
+          "speaker": "Vnučka",
+          "text": "Kde to jsme? Kdo to je? Babi? Kde jsi?"
+        }
+      }
+    },
+    "finale": {
+      "start": "s",
+      "nodes": {
+        "s": {
+          "speaker": "Vnučka",
+          "text": "Maminko?",
+          "next": "n1"
+        },
+        "n1": {
+          "speaker": "Matka",
+          "text": "Jsi to ty? Nemůžu uvěřit, že jsi na to všechno přišla.",
+          "next": "n2"
+        },
+        "n2": {
+          "speaker": "Matka",
+          "text": "Jsi tak hodná a přitom jsi jeho.",
+          "next": "n3"
+        },
+        "n3": {
+          "speaker": "Vnučka",
+          "text": "Jsem tvoje, mami.",
+          "next": "n4"
+        },
+        "n4": {
+          "speaker": "Babička",
+          "text": "Promiň, dceruško, chtěla jsem ti pomoct, opravdu. Já nemohla, viděla jsem v ní jeho.",
+          "next": "n5"
+        },
+        "n5": {
+          "speaker": "Matka",
+          "text": "To já taky.",
+          "next": "n6"
+        },
+        "n6": {
+          "speaker": "Babička",
+          "text": "Je mi to líto, je mi to všechno tak líto. Chtěla jsem věřit, že ho ještě poznávám.",
+          "next": "n7"
+        },
+        "n7": {
+          "speaker": "Matka",
+          "text": "A kvůli tomu jsi mě nechala samotnou.",
+          "next": "n8"
+        },
+        "n8": {
+          "speaker": "Babička",
+          "text": "Ano.",
+          "next": "n9"
+        },
+        "n9": {
+          "speaker": "Matka",
+          "text": "Nenáviděla jsem tě víc než jeho.",
+          "next": "n10"
+        },
+        "n10": {
+          "speaker": "Babička",
+          "text": "Vím.",
+          "next": "n11"
+        },
+        "n11": {
+          "speaker": "Matka",
+          "text": "Ale postarala ses o ni.",
+          "next": "n12"
+        },
+        "n12": {
+          "speaker": "Babička",
+          "text": "Bylo to jediné, co jsem ještě mohla napravit.",
+          "next": "n13"
+        },
+        "n13": {
+          "speaker": "Matka",
+          "text": "Myslela jsem, že po něm nezůstalo nic dobrého… Asi jsem se mýlila. Nevím, jestli ti dokážu odpustit.",
+          "next": "n14"
+        },
+        "n14": {
+          "speaker": "Matka",
+          "text": "Ale už tě nechci nenávidět.",
+          "effects": [
+            {
+              "kind": "despawnNpc",
+              "npc": "matka-kostel"
+            },
+            {
+              "kind": "despawnNpc",
+              "npc": "babicka-kostel"
+            },
+            {
+              "kind": "endGame"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sequences": {
+    "intro": {
+      "steps": [
+        {
+          "kind": "dialog",
+          "dialog": "intro"
+        },
+        {
+          "kind": "effects",
+          "effects": [
+            {
+              "kind": "setFlag",
+              "flag": "asleep",
+              "value": true
+            }
+          ]
+        },
+        {
+          "kind": "wait",
+          "ms": 1200
+        },
+        {
+          "kind": "dialog",
+          "dialog": "awaken"
+        },
+        {
+          "kind": "effects",
+          "effects": [
+            {
+              "kind": "setFlag",
+              "flag": "intro",
+              "value": false
+            },
+            {
+              "kind": "goTo",
+              "scene": "pokoj-spirit"
+            }
+          ]
+        }
+      ]
+    },
+    "finale-hrbitov": {
+      "steps": [
+        {
+          "kind": "wait",
+          "ms": 600
+        },
+        {
+          "kind": "move",
+          "actor": "matka-hrbitov",
+          "to": {
+            "xFrac": 0.5,
+            "yFrac": 0.8
+          }
+        },
+        {
+          "kind": "effects",
+          "effects": [
+            {
+              "kind": "despawnNpc",
+              "npc": "matka-hrbitov"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "npcs": {
+    "babicka-old": {
+      "id": "babicka-old",
+      "name": "Babička",
+      "view": {
+        "atlas": "/atlases/babicka-old.png",
+        "frameWidth": 92,
+        "frameHeight": 92,
+        "columns": 2,
+        "anchorX": 0.5,
+        "anchorY": 1,
+        "clips": {
+          "idle.S": {
+            "frames": [
+              0,
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          }
+        }
+      },
+      "voice": {
+        "sound": "/sounds/dialog-blip.wav"
+      },
+      "dialog": "babicka-spirit"
+    },
+    "babicka-sad": {
+      "id": "babicka-sad",
+      "name": "Babička",
+      "view": {
+        "atlas": "/atlases/babicka-sad.png",
+        "frameWidth": 92,
+        "frameHeight": 92,
+        "columns": 4,
+        "anchorX": 0.5,
+        "anchorY": 1,
+        "clips": {
+          "idle.S": {
+            "frames": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          }
+        }
+      },
+      "voice": {
+        "sound": "/sounds/dialog-blip.wav"
+      },
+      "dialog": "babicka-obyvak"
+    },
+    "babicka-kostel": {
+      "id": "babicka-kostel",
+      "name": "Babička",
+      "view": {
+        "atlas": "/atlases/babicka-old.png",
+        "frameWidth": 92,
+        "frameHeight": 92,
+        "columns": 2,
+        "anchorX": 0.5,
+        "anchorY": 1,
+        "clips": {
+          "idle.S": {
+            "frames": [
+              0,
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          }
+        }
+      },
+      "voice": {
+        "sound": "/sounds/dialog-blip.wav"
+      }
+    },
+    "prisera": {
+      "id": "prisera",
+      "name": "Příšera",
+      "view": {
+        "atlas": "/atlases/prisera.png",
+        "frameWidth": 92,
+        "frameHeight": 92,
+        "columns": 8,
+        "anchorX": 0.5,
+        "anchorY": 1,
+        "clips": {
+          "walk.S": {
+            "frames": [
+              0,
+              1,
+              2
+            ],
+            "fps": 8,
+            "loop": true
+          },
+          "walk.SE": {
+            "frames": [
+              3,
+              4,
+              5
+            ],
+            "fps": 8,
+            "loop": true
+          },
+          "walk.E": {
+            "frames": [
+              6,
+              7,
+              8
+            ],
+            "fps": 8,
+            "loop": true
+          },
+          "walk.NE": {
+            "frames": [
+              9,
+              10,
+              11
+            ],
+            "fps": 8,
+            "loop": true
+          },
+          "walk.N": {
+            "frames": [
+              12,
+              13,
+              14
+            ],
+            "fps": 8,
+            "loop": true
+          },
+          "idle.S": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.SE": {
+            "frames": [
+              3
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.E": {
+            "frames": [
+              6
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.NE": {
+            "frames": [
+              9
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.N": {
+            "frames": [
+              12
+            ],
+            "fps": 4,
+            "loop": true
+          }
+        }
+      },
+      "vision": {
+        "range": 0.42,
+        "angle": 80,
+        "unless": {
+          "kind": "any",
+          "of": [
+            {
+              "kind": "flag",
+              "flag": "reading",
+              "value": true
+            },
+            {
+              "kind": "flag",
+              "flag": "hidden",
+              "value": true
+            }
+          ]
+        },
+        "effects": [
+          {
+            "kind": "goTo",
+            "scene": "hrbitov"
+          }
+        ]
+      }
+    },
+    "matka-hrbitov": {
+      "id": "matka-hrbitov",
+      "name": "Matka",
+      "view": {
+        "atlas": "/atlases/matka-smirena.png",
+        "frameWidth": 92,
+        "frameHeight": 92,
+        "columns": 2,
+        "anchorX": 0.5,
+        "anchorY": 1,
+        "clips": {
+          "idle.S": {
+            "frames": [
+              0,
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          }
+        }
+      },
+      "voice": {
+        "sound": "/sounds/dialog-blip.wav"
+      },
+      "speed": 2.5
+    },
+    "matka-kostel": {
+      "id": "matka-kostel",
+      "name": "Matka",
+      "view": {
+        "atlas": "/atlases/matka-smirena.png",
+        "frameWidth": 92,
+        "frameHeight": 92,
+        "columns": 2,
+        "anchorX": 0.5,
+        "anchorY": 1,
+        "clips": {
+          "idle.S": {
+            "frames": [
+              0,
+              1
+            ],
+            "fps": 4,
+            "loop": true
+          }
+        }
+      },
+      "voice": {
+        "sound": "/sounds/dialog-blip.wav"
+      }
+    }
+  },
+  "player": {
+    "atlas": "/atlases/vnucka.png",
+    "frameWidth": 92,
+    "frameHeight": 92,
+    "columns": 8,
+    "anchorX": 0.5,
+    "anchorY": 1,
+    "clips": {
+      "walk.S": {
+        "frames": [
+          0,
+          1
+        ],
+        "fps": 8,
+        "loop": true
+      },
+      "walk.SE": {
+        "frames": [
+          2,
+          3,
+          4
+        ],
+        "fps": 8,
+        "loop": true
+      },
+      "walk.E": {
+        "frames": [
+          5,
+          6,
+          7
+        ],
+        "fps": 8,
+        "loop": true
+      },
+      "walk.NE": {
+        "frames": [
+          8,
+          9,
+          10
+        ],
+        "fps": 8,
+        "loop": true
+      },
+      "walk.N": {
+        "frames": [
+          11,
+          12
+        ],
+        "fps": 8,
+        "loop": true
+      },
+      "idle.S": {
+        "frames": [
+          0
+        ],
+        "fps": 4,
+        "loop": true
+      },
+      "idle.SE": {
+        "frames": [
+          2
+        ],
+        "fps": 4,
+        "loop": true
+      },
+      "idle.E": {
+        "frames": [
+          5
+        ],
+        "fps": 4,
+        "loop": true
+      },
+      "idle.NE": {
+        "frames": [
+          8
+        ],
+        "fps": 4,
+        "loop": true
+      },
+      "idle.N": {
+        "frames": [
+          11
+        ],
+        "fps": 4,
+        "loop": true
+      }
+    }
+  },
+  "playerViews": [
+    {
+      "when": {
+        "kind": "flag",
+        "flag": "intro",
+        "value": true
+      },
+      "view": {
+        "atlas": "/atlases/invisible.png",
+        "frameWidth": 92,
+        "frameHeight": 92,
+        "columns": 1,
+        "anchorX": 0.5,
+        "anchorY": 1,
+        "clips": {
+          "idle.S": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "walk.S": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.SE": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "walk.SE": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.E": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "walk.E": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.NE": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "walk.NE": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "idle.N": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          },
+          "walk.N": {
+            "frames": [
+              0
+            ],
+            "fps": 4,
+            "loop": true
+          }
+        }
+      }
+    }
+  ],
+  "sounds": {
+    "dialog-blip": {
+      "id": "dialog-blip",
+      "name": "Dialog blip",
+      "src": "/sounds/dialog-blip.wav"
+    },
+    "sfx-ambient": {
+      "id": "sfx-ambient",
+      "name": "Ambient drone",
+      "src": "assets/baked/audio/a49b9c6073e89ec8.wav"
+    },
+    "sfx-pickup": {
+      "id": "sfx-pickup",
+      "name": "Pickup blip",
+      "src": "assets/baked/audio/9af19aef3a5bcbe6.wav"
+    },
+    "sfx-transition": {
+      "id": "sfx-transition",
+      "name": "Scene transition",
+      "src": "assets/baked/audio/2a251a6a4dfb85fc.wav"
+    },
+    "sfx-footstep": {
+      "id": "sfx-footstep",
+      "name": "Footstep",
+      "src": "assets/baked/audio/6f2ab42bf65f62b4.wav"
+    },
+    "sfx-rain": {
+      "id": "sfx-rain",
+      "name": "Rain loop",
+      "src": "assets/baked/audio/3022f37b95d7a216.wav"
+    },
+    "sound": {
+      "id": "sound",
+      "name": "sound",
+      "src": "assets/baked/audio/e41988a7d04e9926.mp3"
+    }
+  },
+  "screens": {
+    "title": {
+      "bg": {
+        "image": "assets/baked/img/9db1987e7b352abe.webp"
+      },
+      "logo": "assets/baked/img/abc80f9aa29185a3.webp",
+      "newGame": {
+        "mode": "image",
+        "image": "assets/baked/img/4fcec7b9a62ad20d.webp"
+      },
+      "continue": {
+        "mode": "image",
+        "image": "assets/baked/img/0b8c873748ea05c0.webp"
+      }
+    },
+    "end": {
+      "text": "Konec",
+      "size": 56,
+      "color": "#e8e8ea",
+      "align": "center"
+    },
+    "credits": {
+      "text": "Vzpomínky\n\nGamejam",
+      "size": 32,
+      "color": "#e8e8ea",
+      "align": "center",
+      "scrollSpeed": 40
+    }
+  },
+  "weatherPresets": {
+    "rain": {
+      "id": "rain",
+      "name": "Rain",
+      "count": 480,
+      "color": "#a9c2e0",
+      "alpha": 0.5,
+      "size": 26,
+      "shape": "streak",
+      "angle": 78,
+      "speed": 950,
+      "sway": 0,
+      "swayFreq": 0,
+      "blend": "normal",
+      "ambient": {
+        "sound": "sfx-rain",
+        "volume": 0.45
+      }
+    },
+    "snow": {
+      "id": "snow",
+      "name": "Snow",
+      "count": 280,
+      "color": "#ffffff",
+      "alpha": 0.9,
+      "size": 6,
+      "shape": "round",
+      "angle": 90,
+      "speed": 90,
+      "sway": 42,
+      "swayFreq": 0.4,
+      "blend": "add"
+    },
+    "dust": {
+      "id": "dust",
+      "name": "Dust",
+      "count": 160,
+      "color": "#d8c79a",
+      "alpha": 0.32,
+      "size": 4,
+      "shape": "round",
+      "angle": 100,
+      "speed": 34,
+      "sway": 30,
+      "swayFreq": 0.25,
+      "blend": "add"
+    }
+  },
+  "footstep": {
+    "sound": "sfx-footstep",
+    "volume": 0.5
+  },
+  "pickupSound": "sfx-pickup",
+  "transitionSound": "sfx-transition",
+  "ambient": {
+    "sound": "sound",
+    "volume": 0.4
+  }
+}

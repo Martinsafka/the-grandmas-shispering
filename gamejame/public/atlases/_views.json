@@ -1,0 +1,267 @@
+{
+  "views": {
+    "vnucka": {
+      "atlas": "/atlases/vnucka.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 8,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "clips": {
+        "walk.S": {
+          "frames": [
+            0,
+            1
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.SE": {
+          "frames": [
+            2,
+            3,
+            4
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.E": {
+          "frames": [
+            5,
+            6,
+            7
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.NE": {
+          "frames": [
+            8,
+            9,
+            10
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.N": {
+          "frames": [
+            11,
+            12
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "idle.S": {
+          "frames": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.SE": {
+          "frames": [
+            2
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.E": {
+          "frames": [
+            5
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.NE": {
+          "frames": [
+            8
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.N": {
+          "frames": [
+            11
+          ],
+          "fps": 4,
+          "loop": true
+        }
+      }
+    },
+    "prisera": {
+      "atlas": "/atlases/prisera.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 8,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "clips": {
+        "walk.S": {
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.SE": {
+          "frames": [
+            3,
+            4,
+            5
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.E": {
+          "frames": [
+            6,
+            7,
+            8
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.NE": {
+          "frames": [
+            9,
+            10,
+            11
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "walk.N": {
+          "frames": [
+            12,
+            13,
+            14
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "idle.S": {
+          "frames": [
+            0
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.SE": {
+          "frames": [
+            3
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.E": {
+          "frames": [
+            6
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.NE": {
+          "frames": [
+            9
+          ],
+          "fps": 4,
+          "loop": true
+        },
+        "idle.N": {
+          "frames": [
+            12
+          ],
+          "fps": 4,
+          "loop": true
+        }
+      }
+    },
+    "babicka-old": {
+      "atlas": "/atlases/babicka-old.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 2,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "clips": {
+        "idle.S": {
+          "frames": [
+            0,
+            1
+          ],
+          "fps": 4,
+          "loop": true
+        }
+      }
+    },
+    "babicka-sad": {
+      "atlas": "/atlases/babicka-sad.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 4,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "clips": {
+        "idle.S": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "fps": 4,
+          "loop": true
+        }
+      }
+    },
+    "matka-smirena": {
+      "atlas": "/atlases/matka-smirena.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 2,
+      "anchorX": 0.5,
+      "anchorY": 1,
+      "clips": {
+        "idle.S": {
+          "frames": [
+            0,
+            1
+          ],
+          "fps": 4,
+          "loop": true
+        }
+      }
+    }
+  },
+  "strips": {
+    "vnucka-wake": {
+      "src": "/atlases/vnucka-wake.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 8,
+      "frames": 9,
+      "fps": 6,
+      "loop": true
+    },
+    "vnucka-sleep": {
+      "src": "/atlases/vnucka-sleep.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 5,
+      "frames": 5,
+      "fps": 6,
+      "loop": true
+    },
+    "babicka-chair": {
+      "src": "/atlases/babicka-chair.png",
+      "frameWidth": 92,
+      "frameHeight": 92,
+      "columns": 2,
+      "frames": 2,
+      "fps": 6,
+      "loop": true
+    }
+  }
+}

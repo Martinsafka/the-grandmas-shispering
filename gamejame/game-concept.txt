@@ -1,0 +1,325 @@
+Koncept:
+Postavy:
+vnučka - herní postava cca 10 let
+zjišťuje, co se stalo matce, přes babičku a clues, brání babičku, protože matku nezná a babička jí vychovala
+na konci sice obě usmíří ale zůstává sama, protože babička umírá (otevřený konec)
+babička - vypravěčka
+starala se o vnučku od časné smrti matky, má výčitky, že jí nezabránila; na prahu smrti vypráví vnučce příběh rodiny, vnučka jí musí provést přes vyprávěné vzpomínky, aby celá rodina došla pokoje (usmíření s matkou)
+slyšela znásilnění, ale nezasáhla, nikomu neřekla, že byla také obětí dědečka, bála se a zároveň svého muže milovala, nepřijala, že nemoc jí ho vzala a v co se proměnil; po jeho smrti je vnučka to jediné, co jí po něm zbylo, proto je proti interrupci
+matka - antagonista cca 16 let
+porodila vnučku po znásilnění dědečkem a zabila se
+její duch se snaží zabránit, aby se vnučka dozvěděla pravdu a usmířila jí s babičkou
+nejprve subtle, pak se změní v monstrum které hráče chasuje
+proč chasuje vnučku: nemá k ní hluboký vztah, vzpomínka na ní připomíná otce, chrání babičku, kterou viní ze zrady
+dědeček - hlavní antagonista, ale nepřítomný
+byl nemocný, měnil se v agresivního a nenávistného, po smrti své matky (prababička) se přestává kontrolovat kvůli nemoci, což vyvrcholí ve znásilnění své vnučky (matka), během těhotenství matky na nemoc umírá
+prababička - nepřítomná, dokud žila, bránila dědečkovi se zcela zvrhnout, s matkou měla jako její babička skvělý vztah, její ztráta matku zasáhla
+
+Centrální element
+mrtvá matka a umírající babička se musí usmířit, matka nezná klidu, protože babička nezasáhla, nezastala se jí a zabránila jí jít na interupci
+hráč musí provést obě vzpomínkami, pomocí interakcí odhalit příběh a na konci je usmířit
+usmíření proběhne přes: shared pain: oběma dědeček na konci ublížil a redemption: postarala se o její dceru a milovala jí
+
+Scény
+dětský pokoj - současnost, babička se vnučkou, obsahuje clues o životě vnučky, jak vyrůstala bez matky; 2x mood change: 1) na začátku, přechod z reality do ducha (změna např. světla v pokoji a objeví se průhledná hratelná postava); 2) na konci jsme zpět, babička ale mrtvá
+nábytek
+postel
+židle
+okno
+stolek se šuplíkem
+světlo
+clues
+fotoalbum - interakce: odvyprávění vztahu s babičkou
+nepořádek - babičce opravdu není dobře
+Klíč od šuplíku collectable ukrytý
+odložená fotka matky - ta tam dřív nebyla, babička asi vzpomínala, collectable
+stará hračka (panenka) - po mamince, collectable
+obrázek co namalovala maminka collectable uložen ve stolku
+
+
+obývák -  minulost, noc, kdy byla matka znásilněná, babička spí mimo svojí postel a slyší co se děje v ložnici; obsahuje clues o proměně dědečka a o tom, že byl zlý i na babičku
+nábytek
+válenda / gauč, kde leží babička
+Knihovna / skříň
+okno
+Police na zdi
+
+
+clues
+zvuky z vedlejšího pokoje (text), pláč, dědečkův dech
+zakrvácený kapesník na zemi vedle gauče (děda babičku zbil), collectable
+lékařská zpráva, děda je nemocný, narušení psychiky, ztráta kontroly a prognóza brzké smrti, collectable
+dokumenty na stolku / sekretáři - parte prababičky, collectable
+duch babičky - lze dávat collectables pro další informace
+Krabička od léků na polici collectable
+starý dárek (perníkové srdce, šperk…) - vzpomínka na dobré časy před nemocí collectable
+oblíbený seriál / kniha / pořad v TV (prohledat knihovnu, zapnout televizi) collectable
+hřbitov - u hrobu prababičky, místo posledního odpočinku prababičky, kterou matka milovala a které jí chránila před dědečkem, zde se zároveň matka zabila
+nábytek
+hrob prababičky
+hroby v okolí
+uzpůsobené pro pozdější chase
+clues
+fotka z ultrazvuku - dítě je zdravé, collectable
+prsten po prababičce - vztah matky a prababičky, collectable
+deník - zavřený, bude postupně odemykaný přes recepty, collectable
+láhev a léky na zemi, collectable
+starý zapalovač, collectable
+svíčka, collectable
+kousek papíru - několik kousků rozesetých po scéně
+papíry - je potřeba na ně aplikovat zapálenou svíčku, odhalí dokument, že matka nesouhlasí s provedením interrupce u nezletilé dcery, collectable
+kompletní deník, collectable
+
+Scény - sdělení a postavy
+dětský pokoj - babička + duch vnučky
+	sdělení: vztah babičky a vnučky, matka časně zemřela
+obývák - duch babičky + duch vnučky
+	sdělení: zdravotní stav dědy, jeho psychický stav, který vede k utrpení jak matky tak babičky, vztah babičky k dědovi, prababička nedávno zemřela
+hřbitov - duch babičky + duch vnučky + duch matky -> příšera
+	sdělení: prababička jako pozitivní postava, těhotenství matky, spor o těhotenství s babičkou, co vedlo k sebevraždě matky, vina babičky
+Gameplay loop
+hráč musí interagovat s předměty v místnostech, prozkoumat a kombinovat, aby nakonec dosáhl všech indicií a usmířil matku s babičkou
+
+
+
+Puzzle:
+Puzzle
+
+hráč musí zkombinovat / získat klíčové předměty, které zabrání matce se v dialogu proměnit na příšeru
+příklad: najde kapesník - zakrváceny kapesník - interakce s duchem babičky - změní se v babičky zakrvácený kapesník - ten může v další scéně dát duchu matky, aby se zabránila proměně v tomto kroku dialogu (odemkne dialogovou možnost)
+
+Když duch matky promluví, je potřeba s ním interagovat, jinak se promění - toto prosím ne, vyměňovat vzhled npc by bylo komplikované. Spíš matka je proměněná hned na začátku, hráči stěžuje plnění úkolů tím že ho může dohnat a tím pádem - game over. Až když se babča smíří tak jen zobrazíme idle animaci matky která pak může zmizet i s babičkou.
+
+Tak necháme nějakou grace period, ale nevím jak to bude fungovat, když je potřeba číst a prohlížet itemy a u toho tě nahání příšera. Nemůžeme je v určitém okamžiku swapnout nebo změnit scénu na obdobnou?
+
+udělal bych to tak že matka bude mít svojí cestu kudy chodí, hráč bude muset cestu vypozorovat a vyhnout se + tam bude pár úkrytů - třeba tmavší kout, skříň a tak kam se hráč může ukrýt.
+
+
+dětský pokoj
+nalézt: klíč, hračku, obrázek, fotka matky. Klíč odemyká stůl, sebrat hračku fotku a obrázek, zkombinovat do “vzpomínky na maminku”
+aplikovat vzpomínky na maminku na babičku - změna scény
+nalézt: fotoalbum hned vedle postele, slouží aby hráči ukázalo, že má sbírat předměty a nosit je babičce
+interakce: nepořádek
+babička si nechce povídat, dokud nedošlo k interakci (odemkne dialogovou možnost “našla jsem tohle album”) + trigger na přechod do snů
+
+obývák
+nalézt: zakrvácený kapesník, použít na babičku, změní se na babičky zakrvácený kapesník
+nalézt: starý dárek, použít na oblíbený seriál, změní se na “vzpomínky na dobré časy”
+interakce: zvuky z pokoje
+interakce: prababičky parte
+nalézt: léky, lékařská zpráva; zkombinovat na “vzpomínky na hrozné časy”
+dialog s babičkou s oběma vzpomínkami - změna scény
+
+
+hřbitov
+deník - uprostřed scény u hrobu, je zavřený, tím že se na něj aplikují “vzpomínky” tak se postupně odemyká (je potřeba je dát ve správném pořadí, jinak se nic nestane),
+kolem něj pathuje příšera (hlídá ho), při interakci je potřeba se jí vyhnout, novou verzi deníku je ale možné v klidu prozkoumat, otevřenější deník může příšeru např. zpomalovat
+zavřený deník -> + vzpomínky na maminku -> otevřený deník (1)
+otevřený deník (1) -> + vzpomínky na prababičku -> otevřený deník (2)
+otevřený deník (2) -> + vzpomínky na dobré časy -> otevřený deník (3)
+otevřený deník (3) -> + vzpomínky na hrozné časy -> otevřený deník (4)
+otevřený deník (4) -> + vzpomínky na těhotenství -> otevřený deník (5)
+otevřený deník (5) -> + vzpomínky na sebevraždu -> kompletní deník
+interakce prababičky parte + hrob -> “vzpomínky na prababičku”
+nalézt: starý zapalovač + svíčka -> zkombinovat na zapálená svíčka, aplikovat na papíry na zemi -> nesouhlas s interrupcí
+nalézt: fotka z ultrazvuku + nesouhlas s interrupcí -> “vzpomínky na těhotenství”
+nalézt: všechny kousky papíru -> zkombinovat do roztrhaná fotka babičky
+nalézt: láhev a léky + roztrhaná fotka babičky -> “vzpomínky na sebevraždu”
+zkombinovat babičky zakrvácený kapesník + kompletní deník -> smíření
+aplikovat smíření na příšeru = the end
+
+Dialogy:
+Úvodní scéna
+Dětský pokoj
+
+večer, vnučka leží v posteli, babička sedí na křesle.
+	Cutscene
+Babička: Spinkej, jsem dnes velmi unavená a není mi dobře.
+Vnučka: Jak ti není dobře, babičko?
+Babička: Je mi slabo, to bude dobré, spinkej ať si můžu taky lehnout, jsem unavená.
+
+*přechod do spirit realm*
+
+Vnučka: Co se stalo? Já spinkám? Babičko?
+Babička: Dceruško…
+
+Interakce - nepořádek: Babičce musí opravdu být zle, když tu nechá takový nepořádek.
+
+Interakce - Babička: Spinkej, nechce se mi povídat.
+
+Pickable - fotoalbum - Vnučka: Kde se tady vzalo tohle album?
+
+Použití fotoalba na babičku
+Babička: A hle, naše staré fotoalbum. Tolik vzpomínek, jak jsi byla malá, dokonce i fotky tvojí maminky, než chudák umřela. Dneska jsem na ni hodně myslela, i na dědu. Hodně jsme jí s dědou ublížili.
+Vnučka: To jsi mi babi nikdy neříkala.
+Babička: Teď už je všechno jinak.
+
+Interakce “spící” babička - vnučka: Babičko? - nic
+
+Interakce babička - Vnučka: Babičko?
+Babička: Co potřebuješ?
+Vnučka: už nic.
+when foto matky
+Vnučka: Našla jsem fotku maminky.
+Babička: Tady byla šťastná, to je předtím, než moje maminka umřela.
+when klíč
+Vnučka: Koukni, našla jsem nějaký klíč.
+Babička: Tak s ním zkus něco odemknout.
+when stará panenka
+Vnučka: Tuhle panenku jsem už někde viděla…
+Babička: No ne, kde se tu vzala? S tou si hrála tvoje maminka když byla ještě malá.
+when obrázek
+Vnučka: Babi, čí je tenhle obrázek?
+Babička: Ten malovala tvoje maminka, byla moc šikovná.
+when foto matky
+Vnučka: Koukej, maminka.
+Babička: Ano, dnes na ní hodně myslím.
+when vzpomínky na maminku
+Vnučka: Co se vlastně mamince stalo?
+Babička: Já s dědou jsme jí moc zklamali. - scéna -> obývák
+
+Interakce šuplík - Vnučka: Hm, zamčený.
+
+Pickable foto matky - Vnučka: Tahle fotka maminky tu nebyla.
+
+Pickable klíč - Vnučka: A hele, klíč, od čeho asi tak je?
+
+Interakce šuplík - nic (otevření).
+
+Pickable šuplík otevřený - Vnučka: A hele, to je ale hezký obrázek.
+
+Pickable stará panenka - Vnučka: To je ale stará panenka!
+
+Obývák
+
+Vnučka stojí uprostřed obýváku, o několik let mladší babička leží na gauči a pláče.
+
+Vnučka: To je náš obývák? Je to tady jiné. Babičko, to jsi ty?
+
+Interakce mladá babička:
+	Vnučka: Babi? Co se děje?
+
+Interakce zvuky za dveřmi:
+Zvuky: *dívčí pláč a mužské hlasité dýchání*
+Vnučka: Co to je za zvuky? Tam někdo pláče?
+Babička: Nechoď k těm dveřím, pojď sem ke mně.
+
+Pickable krvavý kapesník - Vnučka: Kapesník. A je na něm krev! Babi? Babi, stalo se ti něco?
+
+Pickable lékařská zpráva - Vnučka: Papír od doktora, ale nerozumím, co se tam píše.
+
+Pickable úmrtní oznámení - Vnučka: Na tomhle papíru je jméno mojí prababičky.
+
+Pickable kazeta - Vnučka: Stará kazeta? Co je na ní asi za film?
+
+Pickable léky - Vnučka: Tolik léků? Snad se babička nebude zlobit, když na ně sáhnu.
+
+Interakce babička - Vnučka: Babičko?
+Babička: Ano, holčičko?
+when krvavý kapesník
+Vnučka: Babi, čí to je krev?
+Babička: To je moje krev. Tvůj děda býval někdy prudký… Ale dřív jsem se ho nemusela bát.
+when lékařská zpráva
+Vnučka: Babi, co se tam píše?
+Babička: Že je děda moc nemocný a může se chovat zvláštně.
+when úmrtní oznámení
+Vnučka: Babičko, nerozumím tomu, co se tady píše.
+Babička: Tam je napsáno, že moje maminka umřela. Tvoje maminka i já jsme z toho byly velmi smutné. Hlavně kvůli dědovi.
+when kazeta
+Vnučka: Co to tady dělá tahle kazeta?
+Babička: Kde se tady vzala? To byl náš s dědou milovaný film. To jsme s dědou pouštěli pořád dokola… tehdy jsme ještě bývali šťastní.
+when léky
+Vnučka: Babi, proč je tady tolik léků?
+Babička: To jsou dědy léky, ale v téhle době, když se blížil konec, už příliš nepomáhaly.
+when dárek
+Vnučka: Babi, čí je tenhle *PH*?
+Babička: To mi dal děda, kdy ještě… Když nám bylo ještě dobře.
+when vzpomínky na dobré časy and vzpomínky na hrozné časy
+Vnučka: Babi? Co se děje? Vypadáš tak smutně.
+Babička: Moje dceruška. Dneska na ni moc myslím. Zklamala jsem ji. Mám pocit, že mě volá.  scéna -> hřbitov
+
+Hřbitov
+
+Vnučka je najednou pod stromem na hřbitově. Babička se skrývá? Po hřbitově se pohybuje podivná, nebezpečná postava.
+
+Vnučka: Kde to jsme? Kdo to je? Babi? Kde jsi?
+
+Interakce hrob - Vnučka: To je hrob mojí prababičky.
+
+Interakce tmavé papíry - Vnučka: Co to je? Nevidím na to.
+
+Use zapálená svíčka on tmavé papíry - Vnučka: Už na to vidím. -> nesouhlas s provedením interupce u nezletilé
+
+Pickable fotka ultrazvuk - Vnučka: To je moje fotka v maminčině bříšku.
+
+Pickable kus papíru - Vnučka: Kus papíru. Najdu ještě jiný?
+
+Pickable svíčka - Vnučka: A hele, svíčka.
+
+Pickable zapalovač - Vnučka: Zapalovač. S tím bych si neměla hrát. Co když jen zkusím, jestli funguje?
+
+Interakce deník:
+
+zavřený deník - Vnučka: Co je tohle za knížku? Vypadá jako deníček, ale nejde otevřít.
+otevřený deník(1) (vzpomínky na maminku) - Deník: Dneska jsem ve škole dostala vysvědčení. Měla jsem pár špatných známek, ale maminka se na mě vůbec nezlobila a řekla, že jsem její šikulka.
+
+otevřený deník(2) (vzpomínky na prababičku) - Deník: Babička je prostě nejvíc nejlepší. Můžu jí říct všechno a moc se o mě stará. Miluju jí!
+
+otevřený deník(3) (vzpomínky na dobré časy) - Deník: Byli jsme s maminkou a tátou na výletě, bylo to super! Táta se vztekal kvůli autu a my se mu s maminkou smály.
+
+otevřený deník(4) (vzpomínky na hrozné časy) - Deník: Táta se chová zvláštně. Křičel na maminku, křičel na mě. Bojím se. Maminka plakala. Babička by věděla, co dělat, ale už tu není. Maminka se také bojí, jsem sama.
+
+otevřený deník(5) (vzpomínky na těhotenství) - Deník: To dítě je jeho. Nenávidím ho. Nenávidím ji. Prý je to poslední, co po něm zbylo. I když je pryč, pořád je se mnou. Ať všechno po něm zmizí, ale ona mi to nedovolí. Pořád ho miluje. Nenávidím je všechny.
+
+kompletní deník (vzpomínky na sebevraždu)
+
+Pickable kompletní deník - Deník: Už nemůžu. Je mi to jedno. Nesnáším je obě. Nemůžu si pomoci. Jestli ji chce, ať si ji nechá. Já končím. Zradili mě, zklamali. On mě zničil a ona je zbabělec.
+
+Use kompletní deník na strašidlo.
+
+Cutscene? Vedle hrobu duch babičky a matky, příšera je pryč.
+
+
+
+Vnučka: Maminko?
+
+Matka: Jsi to ty? Nemůžu uvěřit, že jsi na to všechno přišla.
+
+(pauza)
+
+Matka: Jsi tak hodná a přitom jsi jeho.
+
+Vnučka: Jsem tvoje, mami.
+
+Babička: Promiň, dceruško, chtěla jsem ti pomoct, opravdu. Já nemohla, viděla jsem v ní jeho.
+
+Matka: To já taky.
+
+Babička: Je mi to líto, je mi to všechno tak líto. Chtěla jsem věřit, že ho ještě poznávám.
+
+Matka: A kvůli tomu jsi mě nechala samotnou.
+
+Babička: Ano.
+
+Matka: Nenáviděla jsem tě víc než jeho.
+
+Babička: Vím.
+
+(pauza)
+
+Matka: Ale postarala ses o ni.
+
+Babička: Bylo to jediné, co jsem ještě mohla napravit.
+
+Matka: Myslela jsem, že po něm nezůstalo nic dobrého… Asi jsem se mýlila. Nevím, jestli ti dokážu odpustit.
+
+(pauza)
+
+Matka: Ale už tě nechci nenávidět.
+Pokoj
+
+TICHO (hudba pryč)
+
+Vnučka: Babi? Babičko? … Ne… Babi.
+
+
