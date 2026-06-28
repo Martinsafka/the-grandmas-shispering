@@ -14,7 +14,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises'
 
 const ROOT = '/Users/martinsafka/WebstormProjects/the-grandmas-shispering/gamejame'
 const V = JSON.parse(await readFile(`${ROOT}/public/atlases/_views.json`, 'utf8')).views
-const BLIP = '/sounds/dialog-blip.wav'
+const BLIP = 'sounds/dialog-blip.wav'
 const voice = { sound: BLIP }
 
 // --- transparent player variant (intro: hide the player) --------------------
@@ -22,7 +22,7 @@ await mkdir(`${ROOT}/public/atlases`, { recursive: true })
 await sharp({ create: { width: 92, height: 92, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } })
   .png()
   .toFile(`${ROOT}/public/atlases/invisible.png`)
-const invisible = { atlas: '/atlases/invisible.png', frameWidth: 92, frameHeight: 92, columns: 1, anchorX: 0.5, anchorY: 1, clips: {} }
+const invisible = { atlas: 'atlases/invisible.png', frameWidth: 92, frameHeight: 92, columns: 1, anchorX: 0.5, anchorY: 1, clips: {} }
 for (const tag of ['S', 'SE', 'E', 'NE', 'N']) {
   invisible.clips[`idle.${tag}`] = { frames: [0], fps: 4, loop: true }
   invisible.clips[`walk.${tag}`] = { frames: [0], fps: 4, loop: true }

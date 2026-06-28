@@ -116,7 +116,7 @@ async function character(name, walkSub, ethereal) {
   const res = await buildAtlas(name, [...walk, ...idle], ethereal)
   if (!res) return null
   const view = {
-    atlas: `/atlases/${name}.png`,
+    atlas: `atlases/${name}.png`,
     frameWidth: CELL,
     frameHeight: CELL,
     columns: res.columns,
@@ -135,7 +135,7 @@ async function idleChar(name, sub, ethereal, fps = 4) {
   const res = await buildAtlas(name, [{ key: 'idle.S', files }], ethereal)
   if (!res) return null
   return {
-    atlas: `/atlases/${name}.png`,
+    atlas: `atlases/${name}.png`,
     frameWidth: CELL,
     frameHeight: CELL,
     columns: res.columns,
@@ -151,7 +151,7 @@ async function strip(name, sub, ethereal, fps = 6) {
   const res = await buildAtlas(name, [{ key: 'all', files }], ethereal)
   if (!res) return null
   return {
-    src: `/atlases/${name}.png`,
+    src: `atlases/${name}.png`,
     frameWidth: CELL,
     frameHeight: CELL,
     columns: res.columns,

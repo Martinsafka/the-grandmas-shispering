@@ -1,7 +1,7 @@
 {
   "views": {
     "vnucka": {
-      "atlas": "/atlases/vnucka.png",
+      "atlas": "atlases/vnucka.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 8,
@@ -89,7 +89,7 @@
       }
     },
     "prisera": {
-      "atlas": "/atlases/prisera.png",
+      "atlas": "atlases/prisera.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 8,
@@ -179,7 +179,7 @@
       }
     },
     "babicka-old": {
-      "atlas": "/atlases/babicka-old.png",
+      "atlas": "atlases/babicka-old.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 2,
@@ -197,7 +197,7 @@
       }
     },
     "babicka-sad": {
-      "atlas": "/atlases/babicka-sad.png",
+      "atlas": "atlases/babicka-sad.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 4,
@@ -217,7 +217,7 @@
       }
     },
     "matka-smirena": {
-      "atlas": "/atlases/matka-smirena.png",
+      "atlas": "atlases/matka-smirena.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 2,
@@ -237,7 +237,7 @@
   },
   "strips": {
     "vnucka-wake": {
-      "src": "/atlases/vnucka-wake.png",
+      "src": "atlases/vnucka-wake.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 8,
@@ -246,7 +246,7 @@
       "loop": true
     },
     "vnucka-sleep": {
-      "src": "/atlases/vnucka-sleep.png",
+      "src": "atlases/vnucka-sleep.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 5,
@@ -255,7 +255,7 @@
       "loop": true
     },
     "babicka-chair": {
-      "src": "/atlases/babicka-chair.png",
+      "src": "atlases/babicka-chair.png",
       "frameWidth": 92,
       "frameHeight": 92,
       "columns": 2,

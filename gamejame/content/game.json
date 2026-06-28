@@ -17,7 +17,7 @@
         {
           "kind": "animated",
           "band": "mid",
-          "src": "/atlases/vnucka-wake.png",
+          "src": "atlases/vnucka-wake.png",
           "frameWidth": 92,
           "frameHeight": 92,
           "columns": 8,
@@ -37,7 +37,7 @@
         {
           "kind": "animated",
           "band": "mid",
-          "src": "/atlases/vnucka-sleep.png",
+          "src": "atlases/vnucka-sleep.png",
           "frameWidth": 92,
           "frameHeight": 92,
           "columns": 5,
@@ -57,7 +57,7 @@
         {
           "kind": "animated",
           "band": "mid",
-          "src": "/atlases/babicka-chair.png",
+          "src": "atlases/babicka-chair.png",
           "frameWidth": 92,
           "frameHeight": 92,
           "columns": 2,
@@ -2213,7 +2213,7 @@
       "id": "babicka-old",
       "name": "Babička",
       "view": {
-        "atlas": "/atlases/babicka-old.png",
+        "atlas": "atlases/babicka-old.png",
         "frameWidth": 92,
         "frameHeight": 92,
         "columns": 2,
@@ -2231,7 +2231,7 @@
         }
       },
       "voice": {
-        "sound": "/sounds/dialog-blip.wav"
+        "sound": "sounds/dialog-blip.wav"
       },
       "dialog": "babicka-spirit"
     },
@@ -2239,7 +2239,7 @@
       "id": "babicka-sad",
       "name": "Babička",
       "view": {
-        "atlas": "/atlases/babicka-sad.png",
+        "atlas": "atlases/babicka-sad.png",
         "frameWidth": 92,
         "frameHeight": 92,
         "columns": 4,
@@ -2259,7 +2259,7 @@
         }
       },
       "voice": {
-        "sound": "/sounds/dialog-blip.wav"
+        "sound": "sounds/dialog-blip.wav"
       },
       "dialog": "babicka-obyvak"
     },
@@ -2267,7 +2267,7 @@
       "id": "babicka-kostel",
       "name": "Babička",
       "view": {
-        "atlas": "/atlases/babicka-old.png",
+        "atlas": "atlases/babicka-old.png",
         "frameWidth": 92,
         "frameHeight": 92,
         "columns": 2,
@@ -2285,14 +2285,14 @@
         }
       },
       "voice": {
-        "sound": "/sounds/dialog-blip.wav"
+        "sound": "sounds/dialog-blip.wav"
       }
     },
     "prisera": {
       "id": "prisera",
       "name": "Příšera",
       "view": {
-        "atlas": "/atlases/prisera.png",
+        "atlas": "atlases/prisera.png",
         "frameWidth": 92,
         "frameHeight": 92,
         "columns": 8,
@@ -2411,7 +2411,7 @@
       "id": "matka-hrbitov",
       "name": "Matka",
       "view": {
-        "atlas": "/atlases/matka-smirena.png",
+        "atlas": "atlases/matka-smirena.png",
         "frameWidth": 92,
         "frameHeight": 92,
         "columns": 2,
@@ -2429,7 +2429,7 @@
         }
       },
       "voice": {
-        "sound": "/sounds/dialog-blip.wav"
+        "sound": "sounds/dialog-blip.wav"
       },
       "speed": 2.5
     },
@@ -2437,7 +2437,7 @@
       "id": "matka-kostel",
       "name": "Matka",
       "view": {
-        "atlas": "/atlases/matka-smirena.png",
+        "atlas": "atlases/matka-smirena.png",
         "frameWidth": 92,
         "frameHeight": 92,
         "columns": 2,
@@ -2455,12 +2455,12 @@
         }
       },
       "voice": {
-        "sound": "/sounds/dialog-blip.wav"
+        "sound": "sounds/dialog-blip.wav"
       }
     }
   },
   "player": {
-    "atlas": "/atlases/vnucka.png",
+    "atlas": "atlases/vnucka.png",
     "frameWidth": 92,
     "frameHeight": 92,
     "columns": 8,
@@ -2555,7 +2555,7 @@
         "value": true
       },
       "view": {
-        "atlas": "/atlases/invisible.png",
+        "atlas": "atlases/invisible.png",
         "frameWidth": 92,
         "frameHeight": 92,
         "columns": 1,
@@ -2640,7 +2640,7 @@
     "dialog-blip": {
       "id": "dialog-blip",
       "name": "Dialog blip",
-      "src": "/sounds/dialog-blip.wav"
+      "src": "sounds/dialog-blip.wav"
     },
     "sfx-ambient": {
       "id": "sfx-ambient",
