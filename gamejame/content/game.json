@@ -2071,27 +2071,32 @@
     "klic": {
       "id": "klic",
       "name": "Klíč",
-      "examine": "Starý klíč. Od čeho asi je?"
+      "examine": "Starý klíč. Od čeho asi je?",
+      "icon": "assets/baked/img/d521cb5497ff8a1c.webp"
     },
     "hracka": {
       "id": "hracka",
       "name": "Stará panenka",
-      "examine": "Panenka po mamince."
+      "examine": "Panenka po mamince.",
+      "icon": "assets/baked/img/b4432197479c3d9d.webp"
     },
     "obrazek": {
       "id": "obrazek",
       "name": "Obrázek",
-      "examine": "Obrázek, který namalovala maminka."
+      "examine": "Obrázek, který namalovala maminka.",
+      "icon": "assets/baked/img/75faf2140dada215.webp"
     },
     "fotka-matky": {
       "id": "fotka-matky",
       "name": "Fotka maminky",
-      "examine": "Fotka maminky, když byla šťastná."
+      "examine": "Fotka maminky, když byla šťastná.",
+      "icon": "assets/baked/img/0d31e182c17e8614.webp"
     },
     "fotoalbum": {
       "id": "fotoalbum",
       "name": "Fotoalbum",
-      "examine": "Staré rodinné fotoalbum."
+      "examine": "Staré rodinné fotoalbum.",
+      "icon": "assets/baked/img/7a1c5f24cd1a7c8e.webp"
     },
     "mem-mom-tmp": {
       "id": "mem-mom-tmp",
@@ -2106,37 +2111,44 @@
     "kapesnik": {
       "id": "kapesnik",
       "name": "Zakrvácený kapesník",
-      "examine": "Kapesník. A je na něm krev."
+      "examine": "Kapesník. A je na něm krev.",
+      "icon": "assets/baked/img/b4e451ae56641460.webp"
     },
     "kapesnik-babicky": {
       "id": "kapesnik-babicky",
       "name": "Babiččin zakrvácený kapesník",
-      "examine": "Babiččin zakrvácený kapesník."
+      "examine": "Babiččin zakrvácený kapesník.",
+      "icon": "assets/baked/img/b4e451ae56641460.webp"
     },
     "lekarska-zprava": {
       "id": "lekarska-zprava",
       "name": "Lékařská zpráva",
-      "examine": "Papír od doktora."
+      "examine": "Papír od doktora.",
+      "icon": "assets/baked/img/d062c3079762ca45.webp"
     },
     "parte": {
       "id": "parte",
       "name": "Úmrtní oznámení",
-      "examine": "Úmrtní oznámení prababičky."
+      "examine": "Úmrtní oznámení prababičky.",
+      "icon": "assets/baked/img/d062c3079762ca45.webp"
     },
     "kazeta": {
       "id": "kazeta",
       "name": "Stará kazeta",
-      "examine": "Stará kazeta s oblíbeným filmem."
+      "examine": "Stará kazeta s oblíbeným filmem.",
+      "icon": "assets/baked/img/26414ed4402afe67.webp"
     },
     "leky": {
       "id": "leky",
       "name": "Léky",
-      "examine": "Spousta dědových léků."
+      "examine": "Spousta dědových léků.",
+      "icon": "assets/baked/img/88f21ac5efe7ec0d.webp"
     },
     "darek": {
       "id": "darek",
       "name": "Starý dárek",
-      "examine": "Dárek z časů, kdy bylo ještě dobře."
+      "examine": "Dárek z časů, kdy bylo ještě dobře.",
+      "icon": "assets/baked/img/43a1804f471e967a.webp"
     },
     "vzpominka-dobre-casy": {
       "id": "vzpominka-dobre-casy",
@@ -2151,27 +2163,32 @@
     "svicka": {
       "id": "svicka",
       "name": "Svíčka",
-      "examine": "Obyčejná svíčka."
+      "examine": "Obyčejná svíčka.",
+      "icon": "assets/baked/img/50866a06356ac3db.webp"
     },
     "zapalovac": {
       "id": "zapalovac",
       "name": "Zapalovač",
-      "examine": "Starý zapalovač."
+      "examine": "Starý zapalovač.",
+      "icon": "assets/baked/img/6076399d76382053.webp"
     },
     "zapalena-svicka": {
       "id": "zapalena-svicka",
       "name": "Zapálená svíčka",
-      "examine": "Hořící svíčka."
+      "examine": "Hořící svíčka.",
+      "icon": "assets/baked/img/fa13df4579c7d470.webp"
     },
     "nesouhlas": {
       "id": "nesouhlas",
       "name": "Nesouhlas s interrupcí",
-      "examine": "Nesouhlas s provedením interrupce u nezletilé."
+      "examine": "Nesouhlas s provedením interrupce u nezletilé.",
+      "icon": "assets/baked/img/d062c3079762ca45.webp"
     },
     "ultrazvuk": {
       "id": "ultrazvuk",
       "name": "Fotka z ultrazvuku",
-      "examine": "Fotka z ultrazvuku — zdravé dítě."
+      "examine": "Fotka z ultrazvuku — zdravé dítě.",
+      "icon": "assets/baked/img/c1eb1928565e735b.webp"
     },
     "vzpominka-tehotenstvi": {
       "id": "vzpominka-tehotenstvi",
@@ -2181,22 +2198,26 @@
     "kus-papiru-1": {
       "id": "kus-papiru-1",
       "name": "Kus fotky (1/4)",
-      "examine": "Utržený kus fotky."
+      "examine": "Utržený kus fotky.",
+      "icon": "assets/baked/img/73dcf3d608a21b5d.webp"
     },
     "kus-papiru-2": {
       "id": "kus-papiru-2",
       "name": "Kus fotky (2/4)",
-      "examine": "Utržený kus fotky."
+      "examine": "Utržený kus fotky.",
+      "icon": "assets/baked/img/bf1502119fde4908.webp"
     },
     "kus-papiru-3": {
       "id": "kus-papiru-3",
       "name": "Kus fotky (3/4)",
-      "examine": "Utržený kus fotky."
+      "examine": "Utržený kus fotky.",
+      "icon": "assets/baked/img/bce3cdf28031bd76.webp"
     },
     "kus-papiru-4": {
       "id": "kus-papiru-4",
       "name": "Kus fotky (4/4)",
-      "examine": "Utržený kus fotky."
+      "examine": "Utržený kus fotky.",
+      "icon": "assets/baked/img/afbf3b4038b676e2.webp"
     },
     "fotka-tmp1": {
       "id": "fotka-tmp1",
@@ -2211,12 +2232,14 @@
     "fotka-babicky": {
       "id": "fotka-babicky",
       "name": "Fotka mladší babičky",
-      "examine": "Složená fotka mladší babičky."
+      "examine": "Složená fotka mladší babičky.",
+      "icon": "assets/baked/img/fb60aa2c681c7084.webp"
     },
     "lahev-leky": {
       "id": "lahev-leky",
       "name": "Láhev a prášky",
-      "examine": "Prázdná láhev a prášky."
+      "examine": "Prázdná láhev a prášky.",
+      "icon": "assets/baked/img/e8b41001efbfa26a.webp"
     },
     "vzpominka-sebevrazda": {
       "id": "vzpominka-sebevrazda",
@@ -2231,7 +2254,8 @@
     "kompletni-denik": {
       "id": "kompletni-denik",
       "name": "Kompletní deník",
-      "examine": "Maminčin deník, celý."
+      "examine": "Maminčin deník, celý.",
+      "icon": "assets/baked/img/10391781f5100c3f.webp"
     },
     "smireni": {
       "id": "smireni",
